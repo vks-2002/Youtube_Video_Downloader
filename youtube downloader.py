@@ -7,7 +7,7 @@ def Downloader():
     print(url.streams)
     video = url.streams.get_highest_resolution()#This will let us download the higest resolution available
     video.download("D:\\") #This will download the video in the given path
-    Label(base, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210) #This is the acknowledgement given to the user
+    Label(base, text = 'DOWNLOADED', font = 'arial 15').place(x= 220 , y = 210) #This is the acknowledgement given to the user
 	#after downloading the video
 base = Tk() #intializing a window
 base.title("Youtube video downloader")
